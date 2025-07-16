@@ -4,11 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "nx",
-    "start": "nx serve project-site-one",
+    "start": "nx serve project-one-ui",
     "start:bff": "nx serve bff",
     "build": "nx run-many --target=build --all",
     "build:bff": "nx build --project bff",
-    "build:ui": "nx build --project project-site-one",
+    "build:ui": "nx build --project project-one-ui",
     "lint": "nx run-many --target=lint --all",
     "test": "nx run-many --target=test --all"
   },
