@@ -1,14 +1,14 @@
 {
-  "name": "@project-one-ui/source",
+  "name": "@project-site-one/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
-    "start": "nx serve",
+    "start": "nx serve project-site-one",
     "start:bff": "nx serve bff",
     "build": "nx run-many --target=build --all",
     "build:bff": "nx build --project bff",
-    "build:ui": "nx build --project project-one-ui",
+    "build:ui": "nx build --project project-site-one",
     "lint": "nx run-many --target=lint --all",
     "test": "nx run-many --target=test --all"
   },

@@ -16,19 +16,19 @@
 To run the dev server for your app, use:
 
 ```sh
-npx nx serve project-one-ui
+npx nx serve project-site-one
 ```
 
 To create a production bundle:
 
 ```sh
-npx nx build project-one-ui
+npx nx build project-site-one
 ```
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project project-one-ui
+npx nx show project project-site-one
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
