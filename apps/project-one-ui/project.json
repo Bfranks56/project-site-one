@@ -1,27 +1,27 @@
 {
-  "name": "project-site-one",
+  "name": "project-one-ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/project-site-one/src",
+  "sourceRoot": "apps/project-one-ui/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular/build:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/project-site-one",
-        "browser": "apps/project-site-one/src/main.ts",
+        "outputPath": "dist/apps/project-one-ui",
+        "browser": "apps/project-one-ui/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/project-site-one/tsconfig.app.json",
+        "tsConfig": "apps/project-one-ui/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/project-site-one/public"
+            "input": "apps/project-one-ui/public"
           }
         ],
-        "styles": ["apps/project-site-one/src/styles.scss"]
+        "styles": ["apps/project-one-ui/src/styles.scss"]
       },
       "configurations": {
         "production": {
@@ -52,10 +52,10 @@
       "executor": "@angular/build:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "project-site-one:build:production"
+          "buildTarget": "project-one-ui:build:production"
         },
         "development": {
-          "buildTarget": "project-site-one:build:development"
+          "buildTarget": "project-one-ui:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -63,7 +63,7 @@
     "extract-i18n": {
       "executor": "@angular/build:extract-i18n",
       "options": {
-        "buildTarget": "project-site-one:build"
+        "buildTarget": "project-one-ui:build"
       }
     },
     "lint": {
@@ -73,16 +73,16 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/project-site-one/jest.config.ts"
+        "jestConfig": "apps/project-one-ui/jest.config.ts"
       }
     },
     "serve-static": {
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "project-site-one:build",
+        "buildTarget": "project-one-ui:build",
         "port": 4200,
-        "staticFilePath": "dist/apps/project-site-one/browser",
+        "staticFilePath": "dist/apps/project-one-ui/browser",
         "spa": true
       }
     }

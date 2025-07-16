@@ -1,8 +1,8 @@
 export default {
-  displayName: 'project-site-one',
+  displayName: 'project-one-ui',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/project-site-one',
+  coverageDirectory: '../../coverage/apps/project-one-ui',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
